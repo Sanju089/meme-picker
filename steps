@@ -1,0 +1,84 @@
+//creats a for of loop for emotiontag
+//step 2 1. Have the new function "renderEmotionsRadios" 
+ //  take in a single parameter. Name that parameter
+ //  "cats". 
+ //  2. Inside renderEmotionsRadios, set up a const called 
+ //  "emotions" and set it equals to whatever is returned 
+ //  by calling getEmotionsArray, passing in "cats" as an 
+  // argument.
+ //  3. For now, renderEmotionsRadios should just log out 
+ //  "emotions".
+ // 4. Call renderEmotionsRadios passing in catsData.
+//step 3 1. Take control of the 'emotion-radios' div.
+// 2. In renderEmotionsRadios, set up a let 
+// to hold our string of HTML. You can initialise
+// it with an empty string.
+// 3. Iterate over "emotions" and put each emotion 
+// in a <p> tag and then add them to the let you 
+// created in step 2. 
+// 4. Render the string to the 'emotion-radios' div.
+// */ 
+//step 4 //make id for radio button and itrate emotion tag in div with lebel
+//step 5// remove duplicats using includes() in getEmotionsArray()
+//step 6 //Add an eventListener to emotionRadios that will listen 
+   out for any *change* in our radio buttons. When it detects
+   a change, it should log out the id of the element that 
+   was selected.
+   //this won't work if the eventListener is listening out for a 
+   'click'. Google what event to listen for - I've already 
+   given you a clue!
+//step 7 //1. highlightCheckedOption should take control 
+ //  of the selected radio input and add the CSS
+//   class of "highlight" to its classlist
+//step 8 1. Create an array of all items that have 
+   the "radio" class.
+2. Iterate over the array and remove the 
+   "highlight" class from each one.
+*/ 
+// step 9 1. Set up an eventlistener which calls a new
+   function called "getMatchingCatsArray" when
+   the "Get Image" button is clicked.
+2. getMatchingCatsArray should save the value
+   of the checked radio input to a const and 
+   log out that const.
+//step 10 //1. Add code to getMatchingCatsArray so 
+   that the two existing lines of code 
+   only run if an emotion has been selected.
+ //step 11 //1. Take control of the gifs only option checkbox.
+2. Set up a const in getMatchingCatsArray to store 
+   a boolean which will be set to true if the 
+   "gifs only" option is checked and false if it's
+   not. (Think what a good name for this const would 
+   be.)
+3. Log it out to check it's working.
+*/
+//step 12 1. Use the .filter() and .includes() methods to get 
+   an array of cats which have the selected emotion
+   in their emotionTags array. 
+2. Store this array in a const and log it out to check
+   it's working. Think: what would be a good name for the
+   const?  
+//step 13 1. Change the .filter() method's function so it returns an 
+   array that only has GIFs if the 'GIFs only' option is 
+   checked. If the 'GIFs only' option is not checked, it
+   should return an array of all matches as it does now.
+*/step 14 Create two fucntion getSingleCat and renderCat
+//   getMatchingCatsArray return an array of cat objects that matched the user's critria
+//getSingleCatObject will return a single cat object selected from array provide by getMatchingCatsArray.
+//renderCat will use the cat object provided by getSingleCatObject to creat HTML string which it will render it the dom
+//get image --> eventListener -->renderCat -->getSingleCatObject-->getMatchingCatsArray
+//step 15 //1. Take the object that is returned by 
+   getSingleCatObject and save it to a const 
+   called "catObject".
+2. Set memeModalInner’s innerHTML to the HTML 
+   string below, remembering to insert the relevant 
+   data from catObject to replace the UPPERCASE text.
+3. Set memeModal’s display property to "flex". 
+ 
+   <!-- `<img 
+        class="cat-img" 
+        src="./images/CAT IMAGE"
+        alt="CAT ALT TEXT"
+        >` -->
+ //step 16  1. Wire up the X button in the modal so
+   it closes the modal.
